@@ -104,11 +104,12 @@ Configure:
     securetty: False
     ttys: False
     console: True
-    PermitRootLogin: 'yes'
+    PasswordAuthentication: 'no'
+    PermitRootLogin: 'without-password'
 
   users:
     root:
-      password: onl
+      password: 0NF0penNetw0rkL!nux!
 
   manifests:
     '/etc/onl/rootfs/manifest.json' :

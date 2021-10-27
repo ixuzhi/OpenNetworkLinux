@@ -503,6 +503,20 @@ rm -f /usr/sbin/policy-rc.d
                                 f.write(line)
                     ua.chmod('644', config)
 
+                if 'PasswordAuthentication' in options:
+                    config = os.path.join(dir_, 'etc/ssh/sshd_config')
+                    ua.chmod('a+rw', config)
+                    lines = open(config).readlines()
+                    with open(config, "w") as f:
+                        for line in lines:
+                            if 'PasswordAuthentication' in line:
+                                v = options['PasswordAuthentication']
+                                logger.info("Setting PasswordAuthentication to %s" % v)
+                                f.write('PasswordAuthentication %s\n' % v)
+                            else:
+                                f.write(line)
+                    ua.chmod('644', config)
+
                 if not options.get('securetty', True):
                     f = os.path.join(dir_, 'etc/securetty')
                     if os.path.exists(f):
