@@ -19,12 +19,11 @@ Documentation
 * [docs/Building.md](docs/Building.md)
     Instructions for building ONL from scratch.
 
-Please see the docs directory for additional information. 
+Please see the docs directory for additional information.
 
 ![alt text] (https://scan.coverity.com/projects/8655/badge.svg "Coverity Scan Build Status")
 
 Credentials
 -----------
 
-For security reason, the password loging method is disabled by default, but you can still login to the system
-via console cable with `root`/`0NF0penNetw0rkL!nux!`.
+For security reason, the password loging method is disabled by default, but you can still login to the system via the console cable.

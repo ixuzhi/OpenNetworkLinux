@@ -109,7 +109,7 @@ Configure:
 
   users:
     root:
-      password: 0NF0penNetw0rkL!nux!
+      password: onl
 
   manifests:
     '/etc/onl/rootfs/manifest.json' :
