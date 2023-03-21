@@ -27,3 +27,14 @@ Credentials
 -----------
 
 For security reason, the password loging method is disabled by default, but you can still login to the system via the console cable.
+
+
+## compile onl for amd64
+```
+make docker
+source setup.env
+make -C packages/base/amd64/onlp
+make onlp-dev
+
+make -C packages/base/amd64/onlp/builds
+```
