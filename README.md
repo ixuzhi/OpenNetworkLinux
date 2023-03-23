@@ -32,8 +32,11 @@ For security reason, the password loging method is disabled by default, but you 
 ## compile onl for amd64
 ```
 make docker
+
+docker/tools/onlbuilder
 source setup.env
-make -C packages/base/amd64/onlp
+make -C packages/base/amd64/onlp/builds/onlp clean
+make -C packages/base/amd64/onlp/builds/onlp
 make onlp-dev
 
 make -C packages/base/amd64/onlp/builds
